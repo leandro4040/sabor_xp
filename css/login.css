@@ -1,0 +1,95 @@
+/* Estilização do Formulário */
+body {
+    align-items: center; 
+    background-color: #a20606;
+ }
+ .cadastro-container {
+     max-width: 400px;
+     margin: 100px auto;
+     padding: 40px;
+     background: #500808;
+     border-radius: 20px;
+     text-align: center;
+     box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+ }
+ 
+ .cadastro-container h2 {
+     color: #ffcc00;
+     margin-bottom: 30px;
+     font-size: 34px;
+     border-bottom: 3px solid #ffcc00;
+     display: inline-block;
+     padding-bottom: 8px;
+ }
+ 
+ .formulario {
+     display: flex;
+     flex-direction: column;
+     gap: 15px;
+ }
+ 
+ .campo {
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ label {
+     font-weight: bold;
+     margin-bottom: 10px;
+     color: antiquewhite;
+     font-size: 18px;
+ }
+ 
+ input {
+     padding: 10px;
+     border: 2px solid #ffcc00;
+     border-radius: 20px;
+     font-size: 16px;
+     background: #500808;
+     color: white;
+     width: 100%;
+ }
+ 
+ input:focus {
+     outline: none;
+     border-color: #ffffff;
+ }
+ 
+ .botao-enviar {
+     width: 100%;
+     padding: 12px;
+     font-size: 18px;
+     font-weight: bold;
+     background: #ffcc00;
+     color: #500808;
+     border: none;
+     border-radius: 20px;
+     cursor: pointer;
+     margin-top: 15px;
+     transition: background 0.3s;
+ }
+ 
+ .botao-enviar:hover {
+     background: #ffdd44;
+ }
+ 
+ input::placeholder {
+     color: antiquewhite;
+     opacity: 0.7;
+     font-style: italic;
+ }
+ .nao-tem-conta {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.nao-tem-conta a {
+    color: #ff5733; /* Escolha uma cor agradável */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nao-tem-conta a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,71 @@
+/* Estilização do Body */
+.body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #a20606; /* Cor do fundo */
+    margin: 0;
+}
+
+/* Estilização do Modal */
+.modal {
+    background: #500808; /* Cor de fundo do modal */
+    padding: 80px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: -45px;
+}
+
+/* Estilização dos Títulos */
+h2, h3 {
+    margin-bottom: 15px;
+    color: #ffcc00; /* Cor dos títulos */
+}
+
+/* Estilização das Categorias e Níveis de Fome */
+.categories, .hunger-levels {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+}
+
+/* Estilização das Categorias e Níveis de Fome */
+.category, .hunger {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+    text-decoration: none; /* Remove o sublinhado */
+    color: rgb(255, 255, 255); /* Cor do texto */
+}
+
+/* Remover a cor de fundo da categoria selecionada */
+.category.selected {
+    background-color: transparent; /* Remover fundo da categoria selecionada */
+}
+
+/* Estilização das Imagens das Categorias e Níveis de Fome */
+.category img, .hunger img {
+    width: 80px;
+    height: 80px;
+}
+
+/* Estilização dos Textos nas Categorias e Níveis de Fome */
+.category span, .hunger span {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Estilização do Hover nas Categorias e Níveis de Fome */
+.category:hover, .hunger:hover {
+    background-color: #ffcc5c; /* Cor de fundo ao passar o mouse */
+}

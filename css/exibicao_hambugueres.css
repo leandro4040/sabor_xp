@@ -1,0 +1,210 @@
+/* Estilo base para a página */
+.body {
+    font-family: Arial, sans-serif;
+    background-color: #a20606; /* Cor de fundo do body */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    flex-direction: column; /* Para telas menores */
+    min-height: 100vh; /* Garante que o conteúdo ocupe toda a altura da tela */
+}
+
+/* Estilo do cardápio */
+.menu {
+    width: 65%; /* Largura um pouco maior, mas ainda compacta */
+    max-width: 1000px;
+    background: #500808; /* Cor de fundo da área de cardápio */
+    padding: 5px; /* Menos padding para tornar o cardápio mais compacto */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Menos colunas para que fiquem mais compactos */
+    gap: 15px; /* Reduzido o espaçamento entre os cards */
+}
+
+/* Título do cardápio */
+h2 {
+    color: #ffcc00; /* Cor do título */
+    border-bottom: 2px solid #ffcc00; /* Linha amarela embaixo do título */
+    padding-bottom: 3px; /* Menor padding */
+    grid-column: span 4;
+    text-align: center;
+    font-size: 30px; /* Tamanho menor do título */
+}
+
+/* Estilo dos cards de hambúrguer */
+.burger-card {
+    display: flex;
+    align-items: center;
+    background: #500808; /* Fundo do card de hambúrguer */
+    border-radius: 8px; /* Borda mais suave */
+    padding: 8px; /* Reduzido o padding dentro dos cards */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    justify-content: center; /* Ajustado para o conteúdo não ficar muito esticado */
+    text-align: center; /* Centraliza o texto dentro do card */
+    height: auto; /* Garante que o card tenha altura ajustável */
+}
+
+.burger-card img {
+    width: 100%;
+    height: 120px; /* Reduzi a altura da imagem para um tamanho mais compacto */
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.burger-info {
+    text-align: center;
+    padding: 5px; /* Reduzi o padding aqui também */
+}
+
+h3 {
+    margin: 5px 0; /* Menor margem */
+    font-size: 14px; /* Fonte menor */
+    color: #ffcc00; /* Cor do nome do hambúrguer */
+}
+
+p {
+    font-size: 10px; /* Texto menor para descrição */
+    color: antiquewhite; /* Cor da descrição */
+    margin: 5px 0;
+}
+
+.price {
+    font-size: 14px; /* Menor tamanho do preço */
+    font-weight: bold;
+    color: white; /* Cor do preço */
+}
+
+/* Estilo do botão de adicionar ao carrinho */
+.add-to-cart {
+    background-color: #ffcc00; /* Cor de fundo do botão */
+    color: #500808; /* Cor do texto do botão */
+    border: none;
+    padding: 8px; /* Menor padding */
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 12px; /* Tamanho menor do botão */
+    margin-top: 8px; /* Menor espaço entre o botão e os elementos acima */
+}
+
+.add-to-cart:hover {
+    background-color: #ffdd44; /* Cor de hover no botão */
+}
+
+/* Media Queries para responsividade */
+
+/* Para telas pequenas (dispositivos móveis) */
+@media (max-width: 767px) {
+    .menu {
+        grid-template-columns: 1fr; /* Faz com que o cardápio ocupe uma coluna */
+        width: 95%; /* Aumenta a largura do cardápio */
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 24px; /* Tamanho menor do título */
+    }
+
+    .burger-card {
+        padding: 10px; /* Menos padding no card */
+    }
+
+    .burger-info {
+        padding: 8px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 10px;
+    }
+
+    .price {
+        font-size: 14px;
+    }
+
+    .add-to-cart {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+/* Para telas médias (tablets) */
+@media (max-width: 1024px) {
+    .menu {
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 28px; /* Tamanho do título ajustado */
+    }
+
+    .burger-card {
+        padding: 12px; /* Menos padding no card */
+    }
+
+    .burger-info {
+        padding: 8px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .price {
+        font-size: 16px;
+    }
+
+    .add-to-cart {
+        padding: 12px;
+        font-size: 16px;
+    }
+}
+
+/* Para telas grandes (desktop) */
+@media (min-width: 1025px) {
+    .menu {
+        grid-template-columns: repeat(4, 1fr); /* 4 colunas para telas maiores */
+        width: 80%;
+    }
+
+    h2 {
+        font-size: 32px; /* Tamanho do título para desktops */
+    }
+
+    .burger-card {
+        padding: 15px;
+    }
+
+    .burger-info {
+        padding: 12px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .price {
+        font-size: 18px;
+    }
+
+    .add-to-cart {
+        padding: 12px;
+        font-size: 16px;
+    }
+}
