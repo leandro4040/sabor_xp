@@ -63,7 +63,7 @@ if (count($_POST) > 0) {
         $correto = $mysqli->query($sqlInsertUsuario) || die($mysqli->error);
 
         if ($correto) {
-            echo '<p class="success">Usuário cadastrado com sucesso!</p>';
+            header('Location: ../cadastrados/Meus_Usuarios_Cadastrados.php');
             unset($_POST);
         }
     }

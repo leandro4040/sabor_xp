@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../css//Form_Atualizar_Cadastro_Usuario.css">
     <link rel="stylesheet" href="../css//Login.css">
     <link rel="stylesheet" href="../css//Form_Cadastrar_Produtos.css">
+    <link rel="stylesheet" href="../css//Validar_Excluir_Usuarios.css">
 </head>
 <body>
     <header>

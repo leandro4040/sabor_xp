@@ -81,7 +81,7 @@
                 $correto = $mysqli->query($Cod_Altera_usuario) or die($mysqli->error);
 
                 if ($correto) {
-                    echo 'Dados do Usuário atualizados corretamente!';
+                    header('Location: ../cadastrados/Meus_Usuarios_Cadastrados.php');
                     unset($_POST);
                 }
             }

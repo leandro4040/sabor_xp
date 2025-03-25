@@ -80,3 +80,4 @@
 </div>
 </form>
 <?php } ?>
+<?php include_once ('../html/Footer.php'); ?>
