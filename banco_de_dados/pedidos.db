@@ -1,0 +1,7 @@
+CREATE TABLE tbl_pedidos (
+  cod_pedido INT(11) NOT NULL AUTO_INCREMENT,
+  data_pedido DATETIME,
+  status ENUM('pendente','finalizado','cancelado') NOT NULL,
+  total DECIMAL(10,2) NOT NULL,
+  endereco_entrega TEXT NOT NULL,
+);

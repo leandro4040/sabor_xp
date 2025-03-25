@@ -1,0 +1,75 @@
+h1 {
+    text-align: center;
+    margin-top: 12px;
+    font-family: Arial, sans-serif;
+    color: #f1f1f1;
+}
+
+/* Container da tabela */
+.table-wrapper {
+    max-width: 1000px;
+    margin: 40px auto;
+    background-color: #4B0000;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow-x: auto; /* Scroll horizontal para dispositivos menores */
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo da Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #ffffff;
+}
+
+thead {
+    background-color: #e65c00;
+}
+
+thead th {
+    padding: 12px 10px;
+    text-align: left;
+    font-size: 16px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+tbody td {
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    font-size: 14px;
+}
+
+/* Estilo para Ações (ex: editar/deletar) */
+tbody td:last-child {
+    text-align: center;
+}
+
+/* Links/Ações dentro da tabela */
+.table-wrapper a {
+    color: #e65c00;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 5px;
+    transition: color 0.2s ease;
+}
+
+.table-wrapper a:hover {
+    color: #ffffff;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+    .table-wrapper {
+        padding: 15px;
+    }
+
+    thead th, tbody td {
+        font-size: 13px;
+        padding: 8px;
+    }
+}

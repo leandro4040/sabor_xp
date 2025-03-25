@@ -1,0 +1,90 @@
+
+.h1{
+    text-align: center;
+    margin-top: 12px;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    border-bottom: 3px solid #ffffff; /* Linha laranja */
+    padding-bottom: 10px; /* Espaçamento entre o título e a linha */
+}
+
+/* Estilo para o formulário de atualização */
+.form-atualizacao {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #4B0000;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.form-atualizacao h1 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-size: 26px;
+}
+
+.form-atualizacao p.error {
+    text-align: center;
+    color: red;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.form-atualizacao .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-atualizacao .form-group .label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.form-atualizacao .form-group .label .error {
+    color: red;
+}
+
+.form-atualizacao .form-group .input input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease;
+}
+
+.form-atualizacao .form-group .input input:focus {
+    border-color: #4B0000;
+    outline: none;
+    box-shadow: 0 0 5px rgba(75, 0, 0, 0.3);
+}
+
+.form-atualizacao button[type="submit"] {
+    display: block;
+    margin: 30px auto 0 auto;
+    padding: 12px 25px;
+    background-color: #e65c00;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-atualizacao button[type="submit"]:hover {
+    background-color: #cc5200;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+    .form-atualizacao {
+        padding: 20px;
+    }
+}

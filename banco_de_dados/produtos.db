@@ -1,0 +1,8 @@
+CREATE TABLE tbl_produtos (
+    cod_produto INT AUTO_INCREMENT PRIMARY KEY,     
+    nome_produto VARCHAR(255) NOT NULL,      
+    preco DECIMAL(10, 2) NOT NULL,          
+    foto_produto VARCHAR(255) NOT NULL,       
+    categoria ENUM('hamburguer', 'bebida', 'sobremesa') NOT NULL, 
+    descricao_produto TEXT NOT NULL,         
+);

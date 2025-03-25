@@ -1,0 +1,5 @@
+CREATE TABLE tbl_carrinho (
+  cod_carrinho INT(11) NOT NULL AUTO_INCREMENT,  
+  quantidade INT(11) NOT NULL,  
+  preco DECIMAL(10,2) NOT NULL, 
+);

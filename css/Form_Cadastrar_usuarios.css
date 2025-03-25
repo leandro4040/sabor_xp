@@ -1,0 +1,93 @@
+/* Estilo para o formulário de cadastro */
+.form-cadastro {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #4B0000;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+/* Título dentro do formulário */
+.form-title {
+    text-align: center;
+    color: #ececec; /* Cor do título */
+    margin-bottom: 25px;
+    font-size: 28px;
+    border-bottom: 3px solid #ffffff; /* Linha laranja abaixo do título */
+    padding-bottom: 10px; /* Espaço entre o título e a linha */
+}
+
+
+.form-cadastro .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-cadastro .form-group .label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.form-cadastro .form-group .label .error {
+    color: red;
+}
+
+.form-cadastro .form-group .input input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease;
+}
+
+.form-cadastro .form-group .input input:focus {
+    border-color: #4B0000;
+    outline: none;
+    box-shadow: 0 0 5px rgba(75, 0, 0, 0.3);
+}
+
+.form-cadastro button[type="submit"] {
+    display: block;
+    margin: 30px auto 0 auto;
+    padding: 12px 25px;
+    background-color: #e65c00;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-cadastro button[type="submit"]:hover {
+    background-color: #cc5200;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Duas colunas iguais */
+    gap: 20px; /* Espaçamento entre os campos */
+}
+.form-cep {
+    max-width: 300px;  /* Largura máxima pro campo */
+    margin: 20px auto; /* Centraliza horizontalmente e dá um espaçamento */
+}
+.label-cep {
+    text-align: center;
+    display: block;
+    margin-bottom: 8px;
+}
+/* Responsivo: em telas menores, vira uma coluna */
+@media (max-width: 700px) {
+    .form-grid {
+        grid-template-columns: 1fr; /* Uma coluna só */
+    }
+}
+
+
